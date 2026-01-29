@@ -91,16 +91,33 @@ input[type="datetime-local"]:valid {
 }
 
 .grid-table {
-    display: grid;
     border-collapse: collapse;
-    padding: 10px;
-    justify-content: center;
+    width: 100%;
+}
+
+.table-narrow {
+    overflow-x: auto;
 }
 
 .grid-table tbody tr:nth-child(even) {
-    background: #e5e5e5;
+    background: #ededed;
 }
 
 .grid-table tbody tr:hover {
     background: #d1e7fd;
+}
+
+.grid-table caption {
+  caption-side: top;
+  margin-bottom: 12px;
+}
+
+.grid-table thead th {
+    text-align: center;
+}
+
+.grid-table th,
+.grid-table td {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
 }

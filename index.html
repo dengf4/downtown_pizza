@@ -12,7 +12,6 @@
     <main class="main-grid">
         <section class="card">
             <h1>Pizza Ordering System</h1>
-            <p>Analyze this code to help you build the Pizza Assignment.</p>
 
             <form action="#" method="post">
                 <fieldset>
@@ -63,8 +62,8 @@
                         <select id="payment-method" name="payment-method" required>
                             <option value="">Select a payment method</option>
                             <option value="credit-card">Cash</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="cash">Cash</option>
+                            <option value="paypal">Card</option>
+                            <option value="cash">Debit</option>
                         </select>
                     </div>
                 </fieldset>
@@ -76,8 +75,9 @@
         </section>
         <aside class="card">
             <h2>Order Summary Table</h2>
+            <div class="table-narrow">
             <table class="grid-table">
-                <caption>Sample Order</caption>
+                <caption>Example Order</caption>
                 <thead>
                     <tr>
                         <th scope="col">Item</th>
@@ -108,6 +108,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </aside>
     </main>
 </body>
