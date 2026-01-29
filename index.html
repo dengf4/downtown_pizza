@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>Pizza Ordering System</h1>
+        <p>Analyze this code to help you build the Pizza Assignment.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <div class="form-grid">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" minlength="2" required>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>The Order</legend>
+                <label>Crust:</label>
+                <div class="flexbox">
+                    <label for="thin">
+                        <input type="radio" id="thin" name="crust" value="thin" required> 
+                        Thin
+                    </label>
+                    <label for="classic">
+                        <input type="radio" id="classic" name="crust" value="classic">
+                        Classic
+                    </label>
+                    <label for="deep-dish">
+                        <input type="radio" id="deep-dish" name="crust" value="deep-dish">
+                        Deep Dish
+                    </label>
+                </div>
+                <label>Toppings:</label>
+                <div class="flexbox-wrap">
+                    <label for="pepperoni">
+                        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"> 
+                        Pepperoni
+                    </label>
+                    <label for="mushroom">
+                        <input type="checkbox" id="mushroom" name="toppings" value="mushroom"> 
+                        Mushroom
+                    </label>
+                    <label for="olives">
+                        <input type="checkbox" id="olives" name="toppings" value="olives"> 
+                        Olives
+                    </label>
+                    <label for="green-peppers">
+                        <input type="checkbox" id="green-peppers" name="toppings" value="green-peppers"> 
+                        Green Peppers
+                    </label>
+                </div>
+                <label>Quantity:</label>
+                <div class="flex-row">
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                </div>
+                <label>Delivery and Payment:</label>
+                <div class="flexbox">
+                    <label for="delivery-instructions">Delivery Instructions:</label>
+                    <textarea id="delivery-instructions" name="delivery-instructions" placeholder="Enter any special instructions"></textarea>
+                    <label for="delivery-time">Preferred Delivery Date & Time:</label>
+                    <input type="datetime-local" id="delivery-time" name="delivery-time" required>
+                    <label for="payment-method">Payment Method:</label>
+                    <select dropdown id="payment-method" name="payment-method" required>
+                        <option value="">Select a payment method</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash">Cash</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="flexbox">
+                <button type="reset">Reset</button>
+                <button type="submit">Order</button>
+            </div>
+        </form>
+        <aside>
+            <h2>Order Summary Table</h2>
+            <table>
+                <caption>Sample Order Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Base pizza</td>
+                        <td>Large (12&quot;), Thin crust</td>
+                        <td>$16.99</td>
+                    </tr>
+                    <tr>
+                        <td>Toppings</td>
+                        <td>Mushrooms, Olives, Extra cheese</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery fee</td>
+                        <td>Standard delivery</td>
+                        <td>$3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>Example total</td>
+                        <td>$25.48</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </main>
+</body>
+
+</html>
